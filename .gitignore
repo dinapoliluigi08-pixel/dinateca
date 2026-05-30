@@ -1,0 +1,9 @@
+# ⚠️ File con credenziali - NON caricare mai online
+.env
+
+# Dipendenze (si reinstallano con composer)
+vendor/
+
+# File di sistema
+.DS_Store
+Thumbs.db
