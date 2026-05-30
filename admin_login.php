@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$ADMIN_USER = getenv('ADMIN_USER') ?: 'admin';
-$ADMIN_PASS = getenv('ADMIN_PASS') ?: 'dinadmin2026@';
+$ADMIN_USER = 'admin';
+$ADMIN_PASS = 'Dinadmin2026@';
 
 if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true) {
     header("Location: admin.php");
