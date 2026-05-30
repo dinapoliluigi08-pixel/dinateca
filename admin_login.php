@@ -1,10 +1,8 @@
 <?php
-require_once "env_loader.php";
 session_start();
 
-// Credenziali admin hardcoded (cambiale nel .env)
-define('ADMIN_USER', env('ADMIN_USER', 'admin'));
-define('ADMIN_PASS', env('ADMIN_PASS', 'Dinateca2026!'));
+$ADMIN_USER = getenv('ADMIN_USER') ?: 'admin';
+$ADMIN_PASS = getenv('ADMIN_PASS') ?: 'dinadmin2026@';
 
 if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true) {
     header("Location: admin.php");
@@ -17,7 +15,7 @@ if (isset($_POST['login'])) {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
 
-    if ($username === ADMIN_USER && $password === ADMIN_PASS) {
+    if ($username === $ADMIN_USER && $password === $ADMIN_PASS) {
         $_SESSION['is_admin'] = true;
         header("Location: admin.php");
         exit;
