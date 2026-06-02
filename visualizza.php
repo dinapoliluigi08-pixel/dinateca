@@ -44,6 +44,7 @@ function stelle($v): string {
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mia Libreria – Dinateca</title>
     <link rel="stylesheet" href="stile.css">
 </head>
