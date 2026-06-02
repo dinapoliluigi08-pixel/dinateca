@@ -128,7 +128,7 @@ function templateBenvenuto(string $username): string {
 
                 <!-- CTA -->
                 <div style='text-align:center;margin:28px 0;'>
-                  <a href='#' style='background:#2d6a4f;color:#ffffff;text-decoration:none;
+                  <a href='https://dinateca-production.up.railway.app/visualizza.php' style='background:#2d6a4f;color:#ffffff;text-decoration:none;
                      padding:14px 32px;border-radius:10px;font-weight:700;font-size:.95rem;
                      display:inline-block;'>
                     📚 Vai alla tua libreria
