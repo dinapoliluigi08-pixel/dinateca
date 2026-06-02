@@ -30,9 +30,13 @@ if (isset($_POST['registra'])) {
 
             // ── Invia email di benvenuto automaticamente ──────
             $corpo = templateBenvenuto($username);
-            inviaEmail($email, "Benvenuto su Dinateca, $username! 📗", $corpo);
-            // Non blocchiamo l'utente se l'email fallisce, andiamo avanti
-
+           $esitoMail = inviaEmail($email, "Benvenuto su Dinateca, $username! 📗", $corpo);
+            if ($esitoMail !== true) {
+                error_log("ERRORE EMAIL BREVO: " . $esitoMail);  
+            // finisce nei log di Railway
+             // Per il debug puoi anche fermarti e vederlo a schermo:
+            // die("DEBUG email: " . $esitoMail);
+            }
             header("Location: visualizza.php?msg=benvenuto");
             exit;
         } else {
