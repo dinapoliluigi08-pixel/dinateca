@@ -1,4 +1,4 @@
-# ⚠️ File con credenziali - NON caricare mai online
+#  File con credenziali - NON caricare mai online
 .env
 
 # Dipendenze (si reinstallano con composer)
