@@ -9,10 +9,10 @@
  * Variabili d'ambiente richieste (impostarle su Railway → Variables,
  * e nel file .env per il locale):
  *  - BREVO_API_KEY : la API key generata su Brevo
- *  - MAIL_FROM     : email del mittente VERIFICATO su Brevo (es. noreplydinateca@gmail.com)
- *  - MAIL_NAME     : nome mostrato come mittente (es. Dinateca)
+ *  - MAIL_FROM     : email del mittente VERIFICATO su Brevo noreplydinateca@gmail.com
+ *  - MAIL_NAME     : nome mostrato come mittente es. Dinateca
  *
- * Come usarlo (invariato rispetto a prima):
+ * Come usarlo:
  *  require_once "mailer.php";
  *  $risultato = inviaEmail("dest@email.it", "Oggetto", "<b>Corpo HTML</b>");
  *  if ($risultato === true) { ... } else { echo $risultato; }
