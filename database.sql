@@ -30,5 +30,3 @@ CREATE TABLE libri (
     FOREIGN KEY (id_utente) REFERENCES utenti(id) ON DELETE CASCADE
 );
 
--- Se hai già il database, aggiungi solo la colonna mancante:
--- ALTER TABLE libri ADD COLUMN colore_copertina VARCHAR(7) NOT NULL DEFAULT '#2d6a4f' AFTER commento;
